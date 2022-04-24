@@ -4,7 +4,6 @@ import { useFirestore } from "../../hooks/useFirestore";
 
 function TransactionList({ transactions }) {
   const { deleteDocument, response } = useFirestore("transactions");
-  console.log(response);
 
   return (
     <ul className={styles.transactions}>
